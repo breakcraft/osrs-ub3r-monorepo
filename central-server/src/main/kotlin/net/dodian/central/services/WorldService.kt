@@ -6,10 +6,10 @@ import com.github.michaelbull.logging.InlineLogger
 import com.google.inject.Inject
 import io.ktor.client.*
 import io.ktor.client.call.*
-import io.ktor.client.request.*
-import io.ktor.client.statement.*
 import io.ktor.client.engine.cio.*
 import io.ktor.client.features.json.*
+import io.ktor.client.request.*
+import io.ktor.client.statement.*
 import io.ktor.http.*
 import io.ktor.util.network.*
 import kotlinx.coroutines.runBlocking
@@ -33,7 +33,7 @@ class WorldService @Inject constructor(
         GameWorldBuilder(
             id = 999,
             activity = "Local Development",
-            host = "local.dodian.net",
+            host = "127.0.0.1",
             properties = listOf(
                 WorldProperty.BETA
             ),
